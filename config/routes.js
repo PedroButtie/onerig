@@ -29,6 +29,7 @@ module.exports.routes = {
   'GET /shoppingcart':{view: 'pages/shoppingcart'},
   'GET /cart/:pid/:cant': 'ProductController.addCart' ,
   'GET /cartDel/:pid': 'ProductController.delCart' ,
+  'GET /moreinfo':{view:'pages/moreinfo'},
 
 
   /***************************************************************************
