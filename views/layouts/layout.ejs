@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="footer, address, phone, icons" />
+    <meta name="keywords" content="footer, address, phone, icons"/>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<div class="contain">
+<div class="containe">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <h3>
@@ -121,116 +121,246 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
-               <!-- "PARA FOOTER ANTIGUO"<div class="contact">
-                    <center><h4><b>Ponte en contacto y resolvemos su consulta</b></h4>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label"><u>Introduce Email</u></label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                   placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label"><u>Escribi tu
-                                    consulta</u></label>
+                <!-- "PARA FOOTER ANTIGUO"<div class="contact">
+                     <center><h4><b>Ponte en contacto y resolvemos su consulta</b></h4>
+                         <div class="mb-3">
+                             <label for="exampleFormControlInput1" class="form-label"><u>Introduce Email</u></label>
+                             <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                         </div>
+                         <div class="mb-3">
+                             <label for="exampleFormControlTextarea1" class="form-label"><u>Escribi tu
+                                     consulta</u></label>
 
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </center>
-                    <center><p><a class="btn" href="">ENVIAR</a></p></center> -->
-
-                </div>
-                <div class="social-bar">
-                    <li><a href="https://www.wa.link/87dxow" class="icon icon-whatsapp" target="_blank"><i
-                                    class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/onerig_cba/" class="icon icon-instagram" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
-                        <a href="mailto:onerigcordoba@gmail.com" class="icon icon-email" target="_blank"><i
-                                    class="fas fa-envelope"></i></a>
-                    </li>
-                </div>
-
+                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                         </div>
+                     </center>
+                     <center><p><a class="btn" href="">ENVIAR</a></p></center> -->
 
             </div>
-            <!-- FOOTER -->
-
-            <style>
-
-                h4 {
-                    font-family: "Calibri Light";
-                    position: relative;
-                    top: 15px;
-
-
-                }
-
-                .icon-email {
-                    margin: 10px;
-                }
-
-                .icon-whatsapp {
-                    margin: 10px;
-                }
-
-                .icon-instagram {
-                    margin: 10px;
-
-                }
+            <div class="social-bar">
+                <li><a href="https://www.wa.link/87dxow" class="icon icon-whatsapp" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/onerig_cba/" class="icon icon-instagram" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    <a href="mailto:onerigcordoba@gmail.com" class="icon icon-email" target="_blank"><i
+                                class="fas fa-envelope"></i></a>
+                </li>
+            </div>
 
 
-                .contact {
-                    width: 350px;
-                    height: auto;
+        </div>
+        <!-- FOOTER -->
 
-                    position: relative;
+        <style>
 
-                    top: -3rem;
-                    left: 80rem;
+            h4 {
+                font-family: "Calibri Light";
+                position: relative;
+                top: 15px;
 
 
-                }
+            }
 
-                h4 {
-                    color: white;
+            .icon-email {
+                margin: 10px;
+            }
 
-                }
+            .icon-whatsapp {
+                margin: 10px;
+            }
 
-                .btn {
-                    color: white;
-                }
+            .icon-instagram {
+                margin: 10px;
 
+            }
+
+
+            .contact {
+                width: 350px;
+                height: auto;
+
+                position: relative;
+
+                top: -3rem;
+                left: 80rem;
+
+
+            }
+
+            h4 {
+                color: white;
+
+            }
+
+            .btn {
+                color: white;
+            }
+
+            .footer {
+                font-size: medium;
+                color: white;
+                position: absolute;
+                right: 1500px;
+                top: 400px;
+
+
+            }
+
+            .container-fluidd {
+
+                margin-top: 50px;
+                /* width:auto;*/
+                height: 400px;
+                bottom: 0px;
+
+            }
+
+            .containe {
+                background: dimgray;
+                width: 100%;
+                /*  max-width:500px ;*/
+                margin: 0 auto;
+                overflow: hidden;
+                box-sizing: border-box;
+
+
+            }
+
+            /************************************************************/
+            /*social bar*/
+
+            .social-bar {
+                position: fixed;
+                right: 0;
+                top: 35%;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                z-index: 100;
+            }
+
+            .icon {
+                color: white;
+                text-decoration: none;
+                padding: .7rem;
+                display: flex;
+                transition: all .5s;
+            }
+
+            .icon-instagram {
+                background: #3f60a5;
+
+            }
+
+            .icon-whatsapp {
+                background: forestgreen;
+
+            }
+
+            .icon-email {
+                background: dodgerblue;
+
+            }
+
+            .icon:first-child {
+                border-radius: 1rem 0 0 0;
+
+            }
+
+            .icon:last-child {
+                border-radius: 0 0 0 1rem;
+            }
+
+
+            .icon:hover {
+                padding-right: 1.5rem;
+                border-radius: 1rem 0 0 1rem;
+                box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+
+
+            }
+
+            @font-face {
+                font-family: 'icomoon';
+                src: url('assets/fonts/icomoon.eot?d0gkk4');
+                src: url('assets/fonts/icomoon.eot?d0gkk4#iefix') format('embedded-opentype'),
+                url('assets/fonts/icomoon.ttf?d0gkk4') format('truetype'),
+                url('assets/fonts/icomoon.woff?d0gkk4') format('woff'),
+                url('assets/fonts/icomoon.svg?d0gkk4#icomoon') format('svg');
+                font-weight: normal;
+                font-style: normal;
+                font-display: block;
+            }
+
+            [class^="icon-"], [class*=" icon-"] {
+                /* use !important to prevent issues with browser extensions that change fonts */
+                font-family: 'icomoon' !important;
+                speak: never;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+
+            /*   .social-bar {
+                   display: flex;
+                   height: 50px;
+                   align-items: center;
+                   justify-content: center;
+                   margin: 40px;
+                   color:white;
+                   line-height: 50px;
+                   font-size: 18px;
+                   box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+                   position: relative;
+                   top: 100px;
+                   left: 450px;
+               }*/
+
+            .contain {
+                box-sizing: border-box;
+            }
+
+            /***********************************************************************/
+
+            @media screen and (min-width: 700px) {
                 .footer {
-                    font-size: medium;
-                    color: white;
-                    position: absolute;
-                    right: 1500px;
-                    top: 400px;
-
-
-
+                    width: 100%;
                 }
 
-                .container-fluidd {
+                .container {
+                    width: 200%;
+                    font-size: 60%;
+                }
 
-                    margin-top: 50px;
-                    /* width:auto;*/
-                    height: 400px;
-                    bottom: 0px;
 
+                contain {
+                    width: 800px;
+                    margin: 0 auto;
+                }
+            }
+
+            @media screen and (max-width: 430px) {
+                /*iphone 6/7/8*/
+                body {
+                    width: 100%;
                 }
 
                 .contain {
-                    width: 100%;
-                    /*  max-width:500px ;*/
+                    width: 250px;
                     margin: 0 auto;
-                    overflow: hidden;
-                    box-sizing: border-box;
-
-
+                    font-size: 8px;
                 }
 
-                /************************************************************/
-                /*social bar*/
-
-                .social-bar {
+                ul.social-bar {
                     position: fixed;
                     right: 0;
                     top: 35%;
@@ -239,388 +369,257 @@
                     flex-direction: column;
                     align-items: flex-end;
                     z-index: 100;
-                }
-
-                .icon {
-                    color: white;
-                    text-decoration: none;
-                    padding: .7rem;
-                    display: flex;
-                    transition: all .5s;
-                }
-
-                .icon-instagram {
-                    background: #3f60a5;
-
-                }
-
-                .icon-whatsapp {
-                    background: forestgreen;
-
-                }
-
-                .icon-email {
-                    background: dodgerblue;
-
-                }
-
-                .icon:first-child {
-                    border-radius: 1rem 0 0 0;
-
-                }
-
-                .icon:last-child {
-                    border-radius: 0 0 0 1rem;
-                }
-
-
-                .icon:hover {
-                    padding-right: 1.5rem;
-                    border-radius: 1rem 0 0 1rem;
-                    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 
 
                 }
 
-                @font-face {
-                    font-family: 'icomoon';
-                    src: url('assets/fonts/icomoon.eot?d0gkk4');
-                    src: url('assets/fonts/icomoon.eot?d0gkk4#iefix') format('embedded-opentype'),
-                    url('assets/fonts/icomoon.ttf?d0gkk4') format('truetype'),
-                    url('assets/fonts/icomoon.woff?d0gkk4') format('woff'),
-                    url('assets/fonts/icomoon.svg?d0gkk4#icomoon') format('svg');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: block;
-                }
-
-                [class^="icon-"], [class*=" icon-"] {
-                    /* use !important to prevent issues with browser extensions that change fonts */
-                    font-family: 'icomoon' !important;
-                    speak: never;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-variant: normal;
-                    text-transform: none;
-                    line-height: 1;
-
-                    /* Better Font Rendering =========== */
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                }
-
-
-                /*   .social-bar {
-                       display: flex;
-                       height: 50px;
-                       align-items: center;
-                       justify-content: center;
-                       margin: 40px;
-                       color:white;
-                       line-height: 50px;
-                       font-size: 18px;
-                       box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
-                       position: relative;
-                       top: 100px;
-                       left: 450px;
-                   }*/
-
-                .contain {
-                    box-sizing: border-box;
-                }
-
-                /***********************************************************************/
-
-                @media screen and (min-width: 700px) {
-                    .footer {
-                        width: 100%;
-                    }
-
-                    .container {
-                        width: 200%;
-                        font-size: 60%;
-                    }
-
-
-                    contain{width: 800px; margin: 0 auto;}
-                }
-
-                @media screen and (max-width: 430px) {  /*iphone 6/7/8*/
-body{
-    width: 100%;
-}
-                    .contain {
-                        width: 250px;
-                        margin: 0 auto;
-                        font-size: 8px;
-                    }
-
-                    ul.social-bar {
-                        position: fixed;
-                        right: 0;
-                        top: 35%;
-                        font-size: 1.5rem;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-                        z-index: 100;
-
-
-                }
-                    .
-
-
+                .
                     /**********************/
+                * {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                html {
+                    background-color: #eaf0f2;
+                }
+
+                body {
+                    font: 16px/1.6 Arial, sans-serif;
+                }
+
+                header {
+                    text-align: center;
+                    padding-top: 100px;
+                    margin-bottom: 190px;
+                }
+
+                header h1 {
+                    font: normal 32px/1.5 'Open Sans', sans-serif;
+                    color: #3F71AE;
+                    padding-bottom: 16px;
+                }
+
+                header h2 {
+                    color: #F05283;
+                }
+
+                header span {
+                    color: #3F71EA;
+                }
 
 
-                    *{
-                        padding:0;
-                        margin:0;
+                /* The footer is fixed to the bottom of the page */
+                footer {
+                    position: fixed;
+                    bottom: 0;
+                }
+
+                @media (max-height: 800px) {
+                    footer {
+                        position: static;
                     }
 
-                    html{
-                        background-color: #eaf0f2;
+                    header {
+                        padding-top: 40px;
                     }
-
-                    body{
-                        font:16px/1.6 Arial,  sans-serif;
-                    }
-
-                    header{
-                        text-align: center;
-                        padding-top: 100px;
-                        margin-bottom:190px;
-                    }
-
-                    header h1{
-                        font: normal 32px/1.5 'Open Sans', sans-serif;
-                        color: #3F71AE;
-                        padding-bottom: 16px;
-                    }
-
-                    header h2{
-                        color: #F05283;
-                    }
-
-                    header span{
-                        color: #3F71EA;
-                    }
+                }
 
 
-                    /* The footer is fixed to the bottom of the page */
+                .footer-distributed {
+                    background-color: #2c292f;
+                    box-sizing: border-box;
+                    width: 100%;
+                    text-align: left;
+                    font: bold 16px sans-serif;
+                    padding: 50px 50px 60px 50px;
+                    margin-top: 80px;
+                }
 
-                    footer{
-                        position: fixed;
-                        bottom: 0;
-                    }
+                .footer-distributed .footer-left,
+                .footer-distributed .footer-center,
+                .footer-distributed .footer-right {
+                    display: inline-block;
+                    vertical-align: top;
+                }
 
-                    @media (max-height:800px){
-                        footer { position: static; }
-                        header { padding-top:40px; }
-                    }
+                /* Footer left */
+                .footer-distributed .footer-left {
+                    width: 30%;
+                }
+
+                .footer-distributed h3 {
+                    color: #ffffff;
+                    font: normal 36px 'Cookie', cursive;
+                    margin: 0;
+                }
+
+                /* The company logo */
+                .footer-distributed .footer-left img {
+                    width: 30%;
+                }
+
+                .footer-distributed h3 span {
+                    color: #e0ac1c;
+                }
+
+                /* Footer links */
+                .footer-distributed .footer-links {
+                    color: #ffffff;
+                    margin: 20px 0 12px;
+                }
+
+                .footer-distributed .footer-links a {
+                    display: inline-block;
+                    line-height: 1.8;
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                .footer-distributed .footer-company-name {
+                    color: #8f9296;
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin: 0;
+                }
+
+                /* Footer Center */
+                .footer-distributed .footer-center {
+                    width: 35%;
+                }
 
 
-                    .footer-distributed{
-                        background-color: #2c292f;
-                        box-sizing: border-box;
-                        width: 100%;
-                        text-align: left;
-                        font: bold 16px sans-serif;
-                        padding: 50px 50px 60px 50px;
-                        margin-top: 80px;
-                    }
+                .footer-distributed .footer-center i {
+                    background-color: #33383b;
+                    color: #ffffff;
+                    font-size: 25px;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 42px;
+                    margin: 10px 15px;
+                    vertical-align: middle;
+                }
+
+                .footer-distributed .footer-center i.fa-envelope {
+                    font-size: 17px;
+                    line-height: 38px;
+                }
+
+                .footer-distributed .footer-center p {
+                    display: inline-block;
+                    color: #ffffff;
+                    vertical-align: middle;
+                    margin: 0;
+                }
+
+                .footer-distributed .footer-center p span {
+                    display: block;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 2;
+                }
+
+                .footer-distributed .footer-center p a {
+                    color: darkgreen;
+                    text-decoration: none;;
+                }
+
+
+                /* Footer Right */
+                .footer-distributed .footer-right {
+                    width: 30%;
+                }
+
+                .footer-distributed .footer-company-about {
+                    line-height: 20px;
+                    color: #92999f;
+                    font-size: 13px;
+                    font-weight: normal;
+                    margin: 0;
+                }
+
+                .footer-distributed .footer-company-about span {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                .footer-distributed .footer-icons {
+                    margin-top: 25px;
+                }
+
+                .footer-distributed .footer-icons a {
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    background-color: #33383b;
+                    border-radius: 2px;
+
+                    font-size: 20px;
+                    color: #ffffff;
+                    text-align: center;
+                    line-height: 35px;
+
+                    margin-right: 3px;
+                    margin-bottom: 5px;
+                }
+
+                /* Responsive Footer */
+                /* */
+                @media (max-width: 880px) {
 
                     .footer-distributed .footer-left,
                     .footer-distributed .footer-center,
-                    .footer-distributed .footer-right{
-                        display: inline-block;
-                        vertical-align: top;
-                    }
-
-                    /* Footer left */
-
-                    .footer-distributed .footer-left{
-                        width: 30%;
-                    }
-
-                    .footer-distributed h3{
-                        color:  #ffffff;
-                        font: normal 36px 'Cookie', cursive;
-                        margin: 0;
-                    }
-
-                    /* The company logo */
-
-                    .footer-distributed .footer-left img{
-                        width: 30%;
-                    }
-
-                    .footer-distributed h3 span{
-                        color:  #e0ac1c;
-                    }
-
-                    /* Footer links */
-
-                    .footer-distributed .footer-links{
-                        color:  #ffffff;
-                        margin: 20px 0 12px;
-                    }
-
-                    .footer-distributed .footer-links a{
-                        display:inline-block;
-                        line-height: 1.8;
-                        text-decoration: none;
-                        color:  inherit;
-                    }
-
-                    .footer-distributed .footer-company-name{
-                        color:  #8f9296;
-                        font-size: 14px;
-                        font-weight: normal;
-                        margin: 0;
-                    }
-
-                    /* Footer Center */
-
-                    .footer-distributed .footer-center{
-                        width: 35%;
-                    }
-
-
-                    .footer-distributed .footer-center i{
-                        background-color:  #33383b;
-                        color: #ffffff;
-                        font-size: 25px;
-                        width: 38px;
-                        height: 38px;
-                        border-radius: 50%;
-                        text-align: center;
-                        line-height: 42px;
-                        margin: 10px 15px;
-                        vertical-align: middle;
-                    }
-
-                    .footer-distributed .footer-center i.fa-envelope{
-                        font-size: 17px;
-                        line-height: 38px;
-                    }
-
-                    .footer-distributed .footer-center p{
-                        display: inline-block;
-                        color: #ffffff;
-                        vertical-align: middle;
-                        margin:0;
-                    }
-
-                    .footer-distributed .footer-center p span{
-                        display:block;
-                        font-weight: normal;
-                        font-size:14px;
-                        line-height:2;
-                    }
-
-                    .footer-distributed .footer-center p a{
-                        color:  darkgreen;
-                        text-decoration: none;;
-                    }
-
-
-                    /* Footer Right */
-
-                    .footer-distributed .footer-right{
-                        width: 30%;
-                    }
-
-                    .footer-distributed .footer-company-about{
-                        line-height: 20px;
-                        color:  #92999f;
-                        font-size: 13px;
-                        font-weight: normal;
-                        margin: 0;
-                    }
-
-                    .footer-distributed .footer-company-about span{
+                    .footer-distributed .footer-right {
                         display: block;
-                        color:  #ffffff;
-                        font-size: 18px;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                    }
-
-                    .footer-distributed .footer-icons{
-                        margin-top: 25px;
-                    }
-
-                    .footer-distributed .footer-icons a{
-                        display: inline-block;
-                        width: 35px;
-                        height: 35px;
-                        cursor: pointer;
-                        background-color:  #33383b;
-                        border-radius: 2px;
-
-                        font-size: 20px;
-                        color: #ffffff;
+                        width: 100%;
+                        margin-bottom: 40px;
                         text-align: center;
-                        line-height: 35px;
-
-                        margin-right: 3px;
-                        margin-bottom: 5px;
                     }
 
-                    /* Here is the code for Responsive Footer */
-                    /* You can remove below code if you don't want Footer to be responsive */
-
-
-                    @media (max-width: 880px) {
-
-                        .footer-distributed .footer-left,
-                        .footer-distributed .footer-center,
-                        .footer-distributed .footer-right{
-                            display: block;
-                            width: 100%;
-                            margin-bottom: 40px;
-                            text-align: center;
-                        }
-
-                        .footer-distributed .footer-center i{
-                            margin-left: 0;
-                        }
-
+                    .footer-distributed .footer-center i {
+                        margin-left: 0;
                     }
-                    /**********************/
 
-                    .titulo h2 {
-                        width: auto;
-                        height: auto;
-                        color: white;
-                        background: dimgray;
-
-                        float: left;
-                        font-size: 150%;
-
-
-                    }
                 }
-
-                @media only screen and (min-width: 600px) {
-                    contain{width: 800px; margin: 0 auto; font-size: 50%}
-                }
-
-
-                .imgcol {
-                    width: 100%;
+                /**********************/
+                .titulo h2 {
+                    width: auto;
                     height: auto;
+                    color: white;
+                    background: dimgray;
+
+                    float: left;
+                    font-size: 150%;
+
+
                 }
+            }
+
+            @media only screen and (min-width: 600px) {
+                contain {
+                    width: 800px;
+                    margin: 0 auto;
+                    font-size: 50%
+                }
+            }
 
 
+            .imgcol {
+                width: 100%;
+                height: auto;
+            }
 
 
+        </style>
 
-            </style>
-
-<aside>
-            <footer class="contain" >
+        <aside>
+            <footer class="contain">
                 <footer class="footer-distributed">
 
                     <div class="footer-left">
@@ -642,10 +641,10 @@ body{
 
                     <div class="footer-center" style="color: white">
                         <div>
-                            <i class="fa fa-map-marker" ></i>
+                            <i class="fa fa-map-marker"></i>
                             <p><span>RECTA MARTINOLI-5000
 						 </span>
-                                </p>
+                            </p>
                         </div>
 
                         <div>
@@ -671,8 +670,8 @@ body{
                     </div>
                 </footer>
             </footer>
-        </div>
-        </aside>
+</div>
+</aside>
 </div>
 </div>
 </body>

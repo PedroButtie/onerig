@@ -1,25 +1,82 @@
 <div class="carrito">
-<ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Placa RTX
-        <span class="badge bg-dark rounded-pill">2</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Rig
-        <span class="badge bg-dark rounded-pill">1</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Set de conexiones
-        <span class="badge bg-dark rounded-pill">1</span>
-    </li>
-</ul>
+    <h1>Calcule los mh/s de su RIG!</h1>
+    <select id="opciones" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>Seleccione la cantidad de placas</option>
+        <option id="1" value="1">1</option>
+        <option id="2" value="2">2</option>
+        <option id="3" value="3">3</option>
+        <option id="4" value="4">4</option>
+        <option id="5" value="5">5</option>
+        <option id="6" value="6">6</option>
+        <option id="7" value="7">7</option>
+        <option id="8" value="8">8</option>
+        <option id="9" value="9">9</option>
+        <option id="10" value="10">10</option>
+        <option id="11" value="11">11</option>
+        <option id="12" value="12">12</option>
+    </select>
+
+    <select id="op" class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Seleccione el modelo de la placa de video</option>
+        <option id="option1" value="40">RTX 2070</option>
+        <option id="option2" value="48.8">RTX 2080</option>
+        <option id="option3" value="58.10">RTX 3060 TI</option>
+        <option id="option4" value="58.50">RTX 3070</option>
+        <option id="option5" value="64">RX 6800 XT</option>
+
+
+    </select>
+    <BR>
+    <div class="dato">
+        <a id="boton" class="btn btn-primary" href="#">CALCULAR MH/S</a>
+
+
+        <div class="mhs">
+            <input id="datos" name="MHS" class="texto" type="view">
+        </div>
+    </div>
+
+    </ul>
 </div>
+
+
+<script>
+
+
+  boton.addEventListener('click', function () {
+    var lista = document.getElementById("opciones");
+    var lista2 = document.getElementById("op");
+    var indiceseleccionado = lista.selectedIndex;
+    var indiceseleccionado2 = lista2.selectedIndex;
+    var opcionseleccionada = lista.options[indiceseleccionado];
+    var opcionseleccionada2 = lista2.options[indiceseleccionado2];
+    var valorSeleccionado = opcionseleccionada.value;
+    var valorSeleccionado2 = opcionseleccionada2.value;
+    var resultado = valorSeleccionado * valorSeleccionado2;
+    document.getElementById("datos").value = resultado;
+
+  })
+
+
+</script>
 <style>
-    ul{
+    ul {
         font-size: large;
 
     }
 
+    #datos {
+        position: relative;
+        top: -34.5px;
+        left: 10rem;
+        height: 33px;
+
+    }
+
+    .dato {
+
+
+    }
 
 
 </style>
