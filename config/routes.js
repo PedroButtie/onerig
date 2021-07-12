@@ -30,6 +30,7 @@ module.exports.routes = {
   'GET /cart/:pid/:cant': 'ProductController.addCart' ,
   'GET /cartDel/:pid': 'ProductController.delCart' ,
   'GET /moreinfo':{view:'pages/moreinfo'},
+  'GET /faq':{view:'pages/faq'},
 
 
 
