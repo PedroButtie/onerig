@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <div class="carrito" style="width: 100%;">
-    <center><h1>Presupuestador</h1></center>
-    <select id="opciones" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+    <center><h1 style="color: darkgreen">Presupuestador</h1></center>
+    <select id="opciones" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+            style="width: 50%">
         <option selected>Seleccione la cantidad de placas</option>
         <option id="1" value="1">1</option>
         <option id="2" value="2">2</option>
@@ -16,21 +17,24 @@
         <option id="10" value="10">10</option>
         <option id="11" value="11">11</option>
         <option id="12" value="12">12</option>
+
     </select>
 
-    <select id="op" class="form-select form-select-sm" aria-label=".form-select-sm example">
+    <select id="op" class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 50%">
         <option selected>Seleccione el modelo de la placa de video</option>
+        <option id="option0" value="30">1660 SUPER</option>
         <option id="option1" value="40">RTX 2070</option>
         <option id="option2" value="48.8">RTX 2080</option>
         <option id="option3" value="58.10">RTX 3060 TI</option>
-        <option id="option4" value="58.50">RTX 3070</option>
+        <option id="option4" value="60">RTX 3070</option>
         <option id="option5" value="64">RX 6800 XT</option>
 
 
     </select>
     <BR>
+
     <div class="dato">
-        <a id="boton" class="btn btn-primary" href="#">CALCULAR MH/S</a>
+        <a id="boton" class="btn btn-secondary" href="#">CALCULAR MH/S</a>
 
 
         <div class="mhs">
@@ -39,16 +43,15 @@
     </div>
 
     <div class="presupuesto">
-        <center><a id="boton2" class="btn btn-primary"
+        <center><a id="boton2" class="btn btn-secondary"
                    href="https://api.whatsapp.com/send?phone=543517637248&text=Hola!+Necesito+presupuesto+para+los+siguientes+productos+para+el+armado+de+mi+rig%3A%0A%0A-Cantidad+de+placas%3A *"
                    onclick="location.href=this.href+  lista.options[lista.selectedIndex].innerHTML+ '* %20%20%0A-Modelo+de+placa%2Fs%3A%20*' + lista2.options[lista2.selectedIndex].innerHTML + '*%0A%0AEspero tu respuesta!' ;return false;">PEDIR
                 PRESUPUESTO </a></center>
 
 
     </div>
-
-    </ul>
 </div>
+</ul>
 
 
 <script>
@@ -59,6 +62,7 @@
   *
   *
   * /****************************************************************************************************/
+
 
   var lista = document.getElementById("opciones");
   var lista2 = document.getElementById("op");
@@ -93,6 +97,15 @@
     /*ESTILO DE LA VIEW */
     /****************************************************************************************************/
 
+    .btn {
+        color: black;
+        transition: background 1s, color 1s;
+        -webkit-transition: color 200ms;
+        -moz-transition: color 200ms;
+        -o-transition: color 200ms;
+        transition: color 200ms;
+        border: 2px darkgray solid;
+    }
 
     ul {
         font-size: large;
@@ -107,10 +120,6 @@
 
     }
 
-    .dato {
-
-
-    }
 
     .carrito {
         position: relative;
@@ -121,7 +130,7 @@
         margin: auto;
     }
 
-/*media query para poder centrar el presupuestador*/
+    /*media query para poder centrar el presupuesto*/
     @media screen and (max-width: 820px) {
         /*iphone 6/7/8*/
         body {
@@ -129,7 +138,6 @@
             width: 100%;
 
         }
-
 
 
         .carrito {
@@ -142,7 +150,8 @@
             margin: auto;
 
         }
-        .presupuesto{
+
+        .presupuesto {
             position: relative;
 
         }
@@ -157,9 +166,8 @@
         }
 
 
-
-
     }
+
     /****************************************************************************************************/
 </style>
 </html>
