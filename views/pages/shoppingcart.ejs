@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<div class="carrito">
-    <center><h1>Presupuestador</h1> </center>
+<div class="carrito" style="width: 100%;">
+    <center><h1>Presupuestador</h1></center>
     <select id="opciones" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
         <option selected>Seleccione la cantidad de placas</option>
         <option id="1" value="1">1</option>
@@ -37,10 +37,12 @@
             <input id="datos" name="MHS" class="texto" type="view">
         </div>
     </div>
-(%0A)
+
     <div class="presupuesto">
-        <center><a id="boton2" class="btn btn-primary" href="https://api.whatsapp.com/send?phone=543517637248&text=Hola!+Necesito+presupuesto+para+los+siguientes+productos+para+el+armado+de+mi+rig%3A%0A%0A-Cantidad+de+placas%3A *"
-                   onclick="location.href=this.href+  lista.options[lista.selectedIndex].innerHTML+ '* %20%20%0A-Modelo+de+placa%2Fs%3A%20*' + lista2.options[lista2.selectedIndex].innerHTML + '*%0A%0AEspero tu respuesta!' ;return false;">PEDIR PRESUPUESTO </a></center>
+        <center><a id="boton2" class="btn btn-primary"
+                   href="https://api.whatsapp.com/send?phone=543517637248&text=Hola!+Necesito+presupuesto+para+los+siguientes+productos+para+el+armado+de+mi+rig%3A%0A%0A-Cantidad+de+placas%3A *"
+                   onclick="location.href=this.href+  lista.options[lista.selectedIndex].innerHTML+ '* %20%20%0A-Modelo+de+placa%2Fs%3A%20*' + lista2.options[lista2.selectedIndex].innerHTML + '*%0A%0AEspero tu respuesta!' ;return false;">PEDIR
+                PRESUPUESTO </a></center>
 
 
     </div>
@@ -52,7 +54,11 @@
 <script>
 
 
-
+  /*
+  * -JAVASCRIPT DE LA VIEW
+  *
+  *
+  * /****************************************************************************************************/
 
   var lista = document.getElementById("opciones");
   var lista2 = document.getElementById("op");
@@ -62,9 +68,6 @@
   var opcionseleccionada2 = lista2.options[indiceseleccionado2];
   var valorSeleccionado = opcionseleccionada.value;
   var valorSeleccionado2 = opcionseleccionada2.value;
-
-
-
 
 
   boton.addEventListener('click', function () {
@@ -82,12 +85,15 @@
   })
 
 
-
-
-
-
+  /****************************************************************************************************/
 </script>
+
+
 <style>
+    /*ESTILO DE LA VIEW */
+    /****************************************************************************************************/
+
+
     ul {
         font-size: large;
 
@@ -105,13 +111,55 @@
 
 
     }
-    .carrito{
+
+    .carrito {
         position: relative;
-        left: 16rem;
-        width: 40rem;
-        height: 30rem;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        margin: auto;
     }
 
+/*media query para poder centrar el presupuestador*/
+    @media screen and (max-width: 820px) {
+        /*iphone 6/7/8*/
+        body {
+            margin: 0;
+            width: 100%;
 
+        }
+
+
+
+        .carrito {
+
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            margin: auto;
+
+        }
+        .presupuesto{
+            position: relative;
+
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        /*iphone 6/7/8*/
+        body {
+            margin: 0;
+            width: 100%;
+
+        }
+
+
+
+
+    }
+    /****************************************************************************************************/
 </style>
 </html>
