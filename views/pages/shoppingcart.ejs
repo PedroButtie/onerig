@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <div class="carrito" style="width: 100%;">
-    <center><h1 style="color: darkgreen">Presupuestador</h1></center>
+    <center><h1 style="color: darkgreen; position: relative;right: 19rem;" >Presupuestador</h1></center>
+    <br><br>
     <select id="opciones" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
             style="width: 50%">
         <option selected>Seleccione la cantidad de placas</option>
@@ -45,7 +46,7 @@
     <div class="presupuesto">
         <center><a id="boton2" class="btn btn-secondary"
                    href="https://api.whatsapp.com/send?phone=543517637248&text=Hola!+Necesito+presupuesto+para+los+siguientes+productos+para+el+armado+de+mi+rig%3A%0A%0A-Cantidad+de+placas%3A *"
-                   onclick="location.href=this.href+  lista.options[lista.selectedIndex].innerHTML+ '* %20%20%0A-Modelo+de+placa%2Fs%3A%20*' + lista2.options[lista2.selectedIndex].innerHTML + '*%0A%0AEspero tu respuesta!' ;return false;">PEDIR
+                   onclick="location.href=this.href+  lista.options[lista.selectedIndex].innerHTML+ '* %20%20%0A-Modelo+de+placa%2Fs%3A%20*' + lista2.options[lista2.selectedIndex].innerHTML + '*%0A%0AEspero tu respuesta!' ;return false; ">PEDIR
                 PRESUPUESTO </a></center>
 
 
@@ -74,6 +75,9 @@
   var valorSeleccionado2 = opcionseleccionada2.value;
 
 
+
+
+
   boton.addEventListener('click', function () {
     var lista = document.getElementById("opciones");
     var lista2 = document.getElementById("op");
@@ -96,7 +100,10 @@
 <style>
     /*ESTILO DE LA VIEW */
     /****************************************************************************************************/
-
+  #boton2{
+      position: relative;
+      right: 12rem;
+  }
     .btn {
         color: black;
         transition: background 1s, color 1s;
@@ -138,7 +145,14 @@
             width: 100%;
 
         }
-
+      h1{
+          position: relative;
+          left: 1rem;
+      }
+      #boton2{
+          position: relative;
+          right: 3rem;
+      }
 
         .carrito {
 
